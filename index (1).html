@@ -1,68 +1,110 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TALHA GROUP DIGITAL SERVICES</title>
-<style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#080808;color:white}
-header{background:#111;padding:22px;text-align:center;border-bottom:2px solid #d4af37}
-.logo{font-size:30px;color:#e8c75a;font-weight:bold}
-nav{padding:15px;text-align:center;background:#191919}
-nav a{color:white;text-decoration:none;margin:8px;font-size:14px}
-.hero{text-align:center;padding:75px 15px;background:linear-gradient(135deg,#171717,#39300e)}
-h1{color:#f1ce57;font-size:34px}
-.hero p{font-size:17px;line-height:1.7}
-.btn{display:inline-block;background:#d4af37;color:black;padding:13px 24px;text-decoration:none;border-radius:7px;font-weight:bold;margin:10px}
-section{padding:40px 18px;text-align:center}
-h2{color:#e7c451}
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:15px;max-width:850px;margin:auto}
-.service{background:#191919;padding:25px 12px;border:1px solid #806b2c;border-radius:12px}
-footer{background:#171717;text-align:center;padding:25px;color:#bbb}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TALHA GROUP — International Technology Company delivering digital services, design, websites and technology solutions.">
+  <meta name="theme-color" content="#090909">
+  <title>TALHA GROUP | International Technology Company</title>
+  <style>
+    :root{--bg:#090909;--panel:#121212;--gold:#d8b15b;--gold2:#f3d98f;--text:#f6f3eb;--muted:#b8b4aa;--line:rgba(216,177,91,.23)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(9,9,9,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:900;letter-spacing:2px;color:var(--gold2);font-size:20px}.brand small{display:block;color:var(--muted);font-size:9px;letter-spacing:3px;font-weight:600}
+    nav{display:flex;gap:20px;align-items:center;flex-wrap:wrap}nav a{font-size:13px;color:#e8e3d8}nav a:hover{color:var(--gold2)}
+    .btn{display:inline-block;padding:12px 19px;border-radius:999px;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#17130a;font-weight:800;font-size:13px;border:0;cursor:pointer}
+    .btn.outline{background:transparent;color:var(--gold2);border:1px solid var(--gold)}
+    .hero{padding:92px 0 76px;background:radial-gradient(ellipse at 80% 20%,rgba(216,177,91,.16),transparent 38%),linear-gradient(180deg,#0c0c0c,#090909)}
+    .eyebrow{color:var(--gold2);font-size:12px;letter-spacing:3px;font-weight:800;text-transform:uppercase}
+    h1{font-size:clamp(40px,7vw,76px);line-height:1.04;letter-spacing:-2px;margin:18px 0}.gold{color:var(--gold2)}
+    .hero p{max-width:650px;color:var(--muted);font-size:17px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .clock{display:inline-flex;gap:10px;align-items:center;margin-top:30px;padding:10px 15px;border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:13px}.clock strong{color:var(--gold2);font-variant-numeric:tabular-nums}
+    section{padding:72px 0}.section-head{max-width:700px;margin-bottom:30px}.section-head h2{font-size:clamp(28px,4vw,42px);margin:8px 0}.section-head p{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,#171717,#101010);border:1px solid var(--line);border-radius:18px;padding:23px;min-height:185px}.card .num{color:var(--gold);font-size:12px;letter-spacing:2px}.card h3{margin:12px 0 7px}.card p{color:var(--muted);font-size:14px;margin:0}
+    .about{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}.about-panel{padding:28px;border-radius:20px;border:1px solid var(--line);background:radial-gradient(circle at top right,rgba(216,177,91,.13),transparent 45%),#121212}.about-panel strong{color:var(--gold2)}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}.stat{border-top:1px solid var(--line);padding-top:12px}.stat b{display:block;color:var(--gold2);font-size:20px}.stat span{font-size:11px;color:var(--muted)}
+    .contact{background:#101010;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.contact-box{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    footer{padding:25px 0;color:var(--muted);font-size:12px}.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    .note{font-size:12px;color:#a59e8e;margin-top:12px}
+    @media(max-width:760px){.nav{align-items:flex-start;padding:14px 0;flex-direction:column}nav{gap:12px}.hero{padding:65px 0}.grid{grid-template-columns:1fr}.about{grid-template-columns:1fr}.stats{grid-template-columns:repeat(3,1fr)}section{padding:55px 0}}
+  </style>
 </head>
 <body>
 <header>
-<div class="logo">★ TALHA GROUP ★</div>
-<p>DIGITAL SERVICES</p>
+  <div class="wrap nav">
+    <a class="brand" href="#home">TALHA GROUP<small>INTERNATIONAL TECHNOLOGY</small></a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
-</nav>
-<div class="hero" id="home">
-<h1>Welcome to TALHA GROUP</h1>
-<p>Your Trusted Digital Services Partner.<br>Smart Solutions for a Digital World.</p>
-<a class="btn" href="#services">Explore Services</a>
-</div>
-<section id="about">
-<h2>About TALHA GROUP</h2>
-<p>We aim to provide useful digital services and creative solutions to our customers.</p>
-</section>
-<section id="services">
-<h2>Our Services</h2>
-<div class="services">
-<div class="service">🌐<h3>Website Design</h3></div>
-<div class="service">🎨<h3>Graphic Design</h3></div>
-<div class="service">📱<h3>Digital Solutions</h3></div>
-<div class="service">🛍️<h3>Online Business</h3></div>
-<div class="service">📢<h3>Social Media Design</h3></div>
-<div class="service">💻<h3>IT Services</h3></div>
-</div>
-</section>
-<section id="contact us +9779700074484.>
-<h2>Contact Us</h2>
-<p>Interested in our services? Contact us today.</p>
-<a class="btn" href="https://wa.me/+9779700074484">WhatsApp Us</a>
-</section>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div class="eyebrow">Innovation beyond boundaries</div>
+      <h1>Building a smarter<br><span class="gold">digital future.</span></h1>
+      <p>TALHA GROUP is an emerging technology company focused on digital services, creative design, web solutions and practical technology for people and businesses around the world.</p>
+      <div class="actions">
+        <a class="btn" href="#services">Explore Services</a>
+        <a class="btn outline" href="#contact">Contact Our Team</a>
+      </div>
+      <div class="clock"> <span>Local time</span><strong id="liveClock">Loading…</strong><span id="liveDate"></span></div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">What we do</div><h2>Technology services for a <span class="gold">connected world.</span></h2><p>Our service areas can grow as the company develops. Contact us to discuss a project or request a quote.</p></div>
+      <div class="grid">
+        <article class="card"><div class="num">01 / DIGITAL</div><h3>Digital Solutions</h3><p>Practical digital support and online solutions for individuals, creators and businesses.</p></article>
+        <article class="card"><div class="num">02 / WEB</div><h3>Website Development</h3><p>Modern, mobile-friendly websites for business profiles, services and online projects.</p></article>
+        <article class="card"><div class="num">03 / DESIGN</div><h3>Graphic Design</h3><p>Professional posters, social media graphics, brand visuals and creative layouts.</p></article>
+        <article class="card"><div class="num">04 / BUSINESS</div><h3>Online Business Support</h3><p>Digital presence, product presentation and support for online business ideas.</p></article>
+        <article class="card"><div class="num">05 / SOCIAL</div><h3>Social Media Design</h3><p>Visual content and profile materials to help brands communicate clearly online.</p></article>
+        <article class="card"><div class="num">06 / TECHNOLOGY</div><h3>Technology Projects</h3><p>Early-stage app concepts, software ideas and technology experiments.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about">
+      <div>
+        <div class="eyebrow">About the company</div>
+        <h2>One vision. <span class="gold">Global ambition.</span></h2>
+        <p style="color:var(--muted)">TALHA GROUP aims to become an international technology company by building useful digital products, delivering reliable services and learning continuously.</p>
+        <p style="color:var(--muted)">We are starting with a focused set of digital services and will introduce new products and capabilities as they are developed.</p>
+      </div>
+      <div class="about-panel">
+        <div class="eyebrow">Our mission</div>
+        <h3>Make technology more useful and accessible.</h3>
+        <p style="color:var(--muted)">We value creativity, clear communication, responsible innovation and customer-focused work.</p>
+        <div class="stats"><div class="stat"><b>Global</b><span>Our ambition</span></div><div class="stat"><b>Digital</b><span>Our starting point</span></div><div class="stat"><b>Future</b><span>Our direction</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap contact-box">
+      <div><div class="eyebrow">Let's work together</div><h2 style="margin:8px 0">Have a project in mind?</h2><p style="color:var(--muted);margin:0">Contact TALHA GROUP to discuss your requirements.</p></div>
+      <div><a class="btn" id="whatsappLink" href="https://wa.me/977XXXXXXXXXX" target="_blank" rel="noopener">Chat on WhatsApp</a><div class="note">WhatsApp number needs to be added before publishing.</div></div>
+    </div>
+  </section>
+</main>
+
 <footer>
-<p>© 2026 TALHA GROUP DIGITAL SERVICES</p>
-<p>All Rights Reserved.</p>
+  <div class="wrap footer-row"><span>© <span id="year"></span> TALHA GROUP. All rights reserved.</span><span>International Technology Company</span></div>
 </footer>
+
+<script>
+  function updateClock(){
+    const now = new Date();
+    document.getElementById('liveClock').textContent = now.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit',second:'2-digit'});
+    document.getElementById('liveDate').textContent = now.toLocaleDateString([], {day:'2-digit',month:'short',year:'numeric'});
+  }
+  updateClock(); setInterval(updateClock,1000);
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
-  </html>
-  
+</html>
