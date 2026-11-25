@@ -56,7 +56,7 @@ footer{background:#171717;text-align:center;padding:25px;color:#bbb}
 <section id="contact">
 <h2>Contact Us</h2>
 <p>Interested in our services? Contact us today.</p>
-<a class="btn" href="https://wa.me/">WhatsApp Us</a>
+<a class="btn" href="https://wa.me/">WhatsApp Us +9779700074484</a>
 </section>
 <footer>
 <p>© 2026 TALHA GROUP DIGITAL SERVICES</p>
