@@ -1,85 +1,68 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#101522">
-<title>TALHA GROUP | Digital Services</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TALHA GROUP DIGITAL SERVICES</title>
 <style>
-:root{--bg:#0d1220;--panel:#151d30;--gold:#e9bd62;--muted:#aab3c5;--white:#f8f8fb}
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(135deg,#0b1020,#171d2b);color:var(--white);line-height:1.55}
-header{padding:18px 6%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff18;gap:15px;flex-wrap:wrap}
-.brand{font-weight:900;letter-spacing:2px;color:var(--gold);font-size:22px}.brand small{display:block;font-size:10px;letter-spacing:3px;color:#d9dce5}
-select, input, textarea,button{font:inherit}select{background:#202a40;color:white;border:1px solid #526078;border-radius:10px;padding:9px}
-.hero{padding:70px 6% 55px;max-width:1100px;margin:auto}.eyebrow{color:var(--gold);letter-spacing:3px;font-weight:bold;font-size:12px}
-h1{font-size:clamp(36px,7vw,64px);line-height:1.06;margin:14px 0}.hero p{max-width:680px;color:var(--muted);font-size:18px}
-.btn{display:inline-block;background:var(--gold);color:#171717;text-decoration:none;font-weight:800;padding:13px 20px;border-radius:11px;border:0;cursor:pointer;margin-top:12px}
-section{padding:35px 6%;max-width:1100px;margin:auto}.section-title{font-size:28px;margin:0 0 8px}.sub{color:var(--muted);margin:0 0 22px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:15px}
-.service{background:var(--panel);border:1px solid #ffffff14;border-radius:16px;padding:20px}.service .ico{font-size:28px}.service h3{margin:8px 0}.service p{color:var(--muted);font-size:14px;margin:0}
-form{background:var(--panel);border:1px solid #ffffff18;border-radius:16px;padding:22px;max-width:650px}
-label{display:block;font-size:14px;margin:12px 0 5px;color:#e6e9f1}
-input,textarea{width:100%;padding:12px;border:1px solid #526078;border-radius:9px;background:#0f1728;color:white}
-textarea{min-height:105px;resize:vertical}
-.note{font-size:12px;color:var(--muted);margin-top:12px}
-footer{margin-top:40px;padding:28px 6%;text-align:center;border-top:1px solid #ffffff18;color:var(--muted);font-size:13px}
-.notice{color:#f6d99b;background:#3b2e16;border:1px solid #8b6a2d;padding:12px 14px;border-radius:10px;max-width:760px;margin-top:20px;font-size:13px}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#080808;color:white}
+header{background:#111;padding:22px;text-align:center;border-bottom:2px solid #d4af37}
+.logo{font-size:30px;color:#e8c75a;font-weight:bold}
+nav{padding:15px;text-align:center;background:#191919}
+nav a{color:white;text-decoration:none;margin:8px;font-size:14px}
+.hero{text-align:center;padding:75px 15px;background:linear-gradient(135deg,#171717,#39300e)}
+h1{color:#f1ce57;font-size:34px}
+.hero p{font-size:17px;line-height:1.7}
+.btn{display:inline-block;background:#d4af37;color:black;padding:13px 24px;text-decoration:none;border-radius:7px;font-weight:bold;margin:10px}
+section{padding:40px 18px;text-align:center}
+h2{color:#e7c451}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:15px;max-width:850px;margin:auto}
+.service{background:#191919;padding:25px 12px;border:1px solid #806b2c;border-radius:12px}
+footer{background:#171717;text-align:center;padding:25px;color:#bbb}
 </style>
 </head>
 <body>
 <header>
-  <div class="brand">TALHA GROUP<small>DIGITAL SERVICES</small></div>
-  <select id="language" aria-label="Choose language">
-    <option value="en">English</option><option value="hi">हिन्दी</option><option value="ne">नेपाली</option>
-  </select>
+<div class="logo">★ TALHA GROUP ★</div>
+<p>DIGITAL SERVICES</p>
 </header>
-<main>
-<div class="hero">
-  <div class="eyebrow" data-i18n="tag">YOUR DIGITAL WORK, MADE SIMPLE</div>
-  <h1 data-i18n="headline">Creative digital services in one place.</h1>
-  <p data-i18n="intro">Explore design, documents and digital support services from TALHA GROUP. Choose a service and send us your request.</p>
-  <a class="btn" href="#request" data-i18n="cta">Request a Service</a>
-  <div class="notice" data-i18n="demo">DEMO WEBSITE: Requests are saved only in this browser. They are not sent to TALHA GROUP yet.</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+<div class="hero" id="home">
+<h1>Welcome to TALHA GROUP</h1>
+<p>Your Trusted Digital Services Partner.<br>Smart Solutions for a Digital World.</p>
+<a class="btn" href="#services">Explore Services</a>
 </div>
-<section>
-  <h2 class="section-title" data-i18n="servicesTitle">Our Services</h2>
-  <p class="sub" data-i18n="servicesSub">Select the service you need.</p>
-  <div class="grid">
-    <article class="service"><div class="ico">🎨</div><h3 data-i18n="s1">Poster & Graphic Design</h3><p data-i18n="d1">Social media posts, banners and promotional designs.</p></article>
-    <article class="service"><div class="ico">🖼️</div><h3 data-i18n="s2">Logo & Thumbnail Design</h3><p data-i18n="d2">Brand logos and YouTube thumbnails.</p></article>
-    <article class="service"><div class="ico">📄</div><h3 data-i18n="s3">PDF & Document Help</h3><p data-i18n="d3">Document formatting and basic PDF support.</p></article>
-    <article class="service"><div class="ico">🧾</div><h3 data-i18n="s4">CV & Resume</h3><p data-i18n="d4">Clean, professional CV and resume layouts.</p></article>
-    <article class="service"><div class="ico">🌐</div><h3 data-i18n="s5">Basic Website Design</h3><p data-i18n="d5">Simple informational websites for small businesses.</p></article>
-    <article class="service"><div class="ico">✍️</div><h3 data-i18n="s6">Writing & Translation</h3><p data-i18n="d6">Basic writing and language assistance.</p></article>
-  </div>
+<section id="about">
+<h2>About TALHA GROUP</h2>
+<p>We aim to provide useful digital services and creative solutions to our customers.</p>
 </section>
-<section id="request">
-  <h2 class="section-title" data-i18n="requestTitle">Send a Service Request</h2>
-  <p class="sub" data-i18n="requestSub">Fill in the details below. This demo stores the request on this device only.</p>
-  <form id="requestForm">
-    <label for="customer" data-i18n="nameLabel">Your name</label><input id="customer" required maxlength="80" autocomplete="name">
-    <label for="service" data-i18n="serviceLabel">Service needed</label>
-    <select id="service" required style="width:100%;padding:12px">
-      <option value="" data-i18n="choose">Choose a service</option>
-      <option>Poster & Graphic Design</option><option>Logo & Thumbnail Design</option><option>PDF & Document Help</option><option>CV & Resume</option><option>Basic Website Design</option><option>Writing & Translation</option>
-    </select>
-    <label for="details" data-i18n="detailsLabel">Describe what you need</label><textarea id="details" required maxlength="1000"></textarea>
-    <button class="btn" type="submit" data-i18n="submit">Save Demo Request</button>
-    <p id="status" role="status" class="note"></p>
-    <p class="note" data-i18n="privacy">Please do not enter passwords, OTPs, bank details or other sensitive information.</p>
-  </form>
+<section id="services">
+<h2>Our Services</h2>
+<div class="services">
+<div class="service">🌐<h3>Website Design</h3></div>
+<div class="service">🎨<h3>Graphic Design</h3></div>
+<div class="service">📱<h3>Digital Solutions</h3></div>
+<div class="service">🛍️<h3>Online Business</h3></div>
+<div class="service">📢<h3>Social Media Design</h3></div>
+<div class="service">💻<h3>IT Services</h3></div>
+</div>
 </section>
-</main>
-<footer>© <span id="year"></span> TALHA GROUP Digital Services. <span data-i18n="footer">Demo website • Nepal</span></footer>
-<script>
-const dict={
-en:{tag:"YOUR DIGITAL WORK, MADE SIMPLE",headline:"Creative digital services in one place.",intro:"Explore design, documents and digital support services from TALHA GROUP. Choose a service and send us your request.",cta:"Request a Service",demo:"DEMO WEBSITE: Requests are saved only in this browser. They are not sent to TALHA GROUP yet.",servicesTitle:"Our Services",servicesSub:"Select the service you need.",s1:"Poster & Graphic Design",d1:"Social media posts, banners and promotional designs.",s2:"Logo & Thumbnail Design",d2:"Brand logos and YouTube thumbnails.",s3:"PDF & Document Help",d3:"Document formatting and basic PDF support.",s4:"CV & Resume",d4:"Clean, professional CV and resume layouts.",s5:"Basic Website Design",d5:"Simple informational websites for small businesses.",s6:"Writing & Translation",d6:"Basic writing and language assistance.",requestTitle:"Send a Service Request",requestSub:"Fill in the details below. This demo stores the request on this device only.",nameLabel:"Your name",serviceLabel:"Service needed",choose:"Choose a service",detailsLabel:"Describe what you need",submit:"Save Demo Request",privacy:"Please do not enter passwords, OTPs, bank details or other sensitive information.",footer:"Demo website • Nepal",saved:"Demo request saved on this device only."},
-hi:{tag:"आपका डिजिटल काम, अब आसान",headline:"सभी डिजिटल सेवाएँ एक ही जगह।",intro:"TALHA GROUP की डिजाइन, दस्तावेज़ और डिजिटल सहायता सेवाएँ देखें। सेवा चुनें और अपना अनुरोध भरें।",cta:"सेवा का अनुरोध करें",demo:"डेमो वेबसाइट: अनुरोध केवल इसी ब्राउज़र में सेव होता है। अभी TALHA GROUP को नहीं भेजा जाता।",servicesTitle:"हमारी सेवाएँ",servicesSub:"अपनी ज़रूरत की सेवा चुनें।",s1:"पोस्टर और ग्राफिक डिजाइन",d1:"सोशल मीडिया पोस्ट, बैनर और प्रचार डिजाइन।",s2:"लोगो और थंबनेल डिजाइन",d2:"ब्रांड लोगो और YouTube थंबनेल।",s3:"PDF और दस्तावेज़ सहायता",d3:"दस्तावेज़ फॉर्मेटिंग और सामान्य PDF सहायता।",s4:"CV और रिज्यूमे",d4:"साफ-सुथरे प्रोफेशनल CV और रिज्यूमे।",s5:"बेसिक वेबसाइट डिजाइन",d5:"छोटे व्यवसायों के लिए साधारण वेबसाइट।",s6:"लेखन और अनुवाद",d6:"सामान्य लेखन और भाषा सहायता।",requestTitle:"सेवा का अनुरोध भेजें",requestSub:"नीचे जानकारी भरें। यह डेमो अनुरोध केवल इसी डिवाइस पर सेव करता है।",nameLabel:"आपका नाम",serviceLabel:"कौन-सी सेवा चाहिए",choose:"सेवा चुनें",detailsLabel:"अपनी ज़रूरत बताएँ",submit:"डेमो अनुरोध सेव करें",privacy:"पासवर्ड, OTP, बैंक जानकारी या निजी संवेदनशील जानकारी न लिखें।",footer:"डेमो वेबसाइट • नेपाल",saved:"डेमो अनुरोध केवल इसी डिवाइस पर सेव हुआ।"},
-ne:{tag:"तपाईंको डिजिटल काम, अब सजिलो",headline:"सबै डिजिटल सेवा एउटै ठाउँमा।",intro:"TALHA GROUP का डिजाइन, कागजात र डिजिटल सहायता सेवा हेर्नुहोस्। सेवा छानेर अनुरोध पठाउनुहोस्।",cta:"सेवा अनुरोध गर्नुहोस्",demo:"डेमो वेबसाइट: अनुरोध यही ब्राउजरमा मात्र सुरक्षित हुन्छ। अहिले TALHA GROUP लाई पठाइँदैन।",servicesTitle:"हाम्रा सेवाहरू",servicesSub:"आवश्यक सेवा छान्नुहोस्।",s1:"पोस्टर र ग्राफिक डिजाइन",d1:"सोसल मिडिया पोस्ट, ब्यानर र प्रचार डिजाइन।",s2:"लोगो र थम्बनेल डिजाइन",d2:"ब्रान्ड लोगो र YouTube थम्बनेल।",s3:"PDF र कागजात सहायता",d3:"कागजात मिलाउने र सामान्य PDF सहायता।",s4:"CV र Resume",d4:"सफा र व्यावसायिक CV तथा Resume।",s5:"आधारभूत वेबसाइट डिजाइन",d5:"साना व्यवसायका लागि साधारण वेबसाइट।",s6:"लेखन र अनुवाद",d6:"सामान्य लेखन तथा भाषा सहायता।",requestTitle:"सेवा अनुरोध पठाउनुहोस्",requestSub:"तल विवरण भर्नुहोस्। यो डेमोले अनुरोध यही उपकरणमा मात्र सुरक्षित गर्छ।",nameLabel:"तपाईंको नाम",serviceLabel:"चाहिएको सेवा",choose:"सेवा छान्नुहोस्",detailsLabel:"आफ्नो आवश्यकता लेख्नुहोस्",submit:"डेमो अनुरोध सुरक्षित गर्नुहोस्",privacy:"पासवर्ड, OTP, बैंक विवरण वा संवेदनशील जानकारी नलेख्नुहोस्।",footer:"डेमो वेबसाइट • नेपाल",saved:"डेमो अनुरोध यही उपकरणमा मात्र सुरक्षित भयो।"}
-};
-const lang=document.getElementById('language');
-lang.addEventListener('change',()=>{const d=dict[lang.value];document.querySelectorAll('[data-i18n]').forEach(el=>{const k=el.dataset.i18n;if(d[k])el.textContent=d[k]})});
-document.getElementById('requestForm').addEventListener('submit',e=>{e.preventDefault();const req={name:document.getElementById('customer').value,service:document.getElementById('service').value,details:document.getElementById('details').value,createdAt:new Date().toISOString()};try{const all=JSON.parse(localStorage.getItem('talhaDemoRequests')||'[]');all.push(req);localStorage.setItem('talhaDemoRequests',JSON.stringify(all));document.getElementById('status').textContent=dict[lang.value].saved;e.target.reset()}catch(err){document.getElementById('status').textContent='Could not save on this browser.'}});
-document.getElementById('year').textContent=new Date().getFullYear();
-</script>
-</body></html>
+<section id="contact">
+<h2>Contact Us</h2>
+<p>Interested in our services? Contact us today.</p>
+<a class="btn" href="https://wa.me/">WhatsApp Us</a>
+</section>
+<footer>
+<p>© 2026 TALHA GROUP DIGITAL SERVICES</p>
+<p>All Rights Reserved.</p>
+</footer>
+</body>
+  </html>
+  
